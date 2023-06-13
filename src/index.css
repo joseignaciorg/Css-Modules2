@@ -1,3 +1,15 @@
 body {
 	font-family: sans-serif;
 }
+.container{
+	display: grid;
+	gap: .625rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width:700px){
+    .container{
+        grid-template-columns: 1fr;
+	 }
+}
